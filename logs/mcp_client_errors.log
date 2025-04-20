@@ -1,0 +1,735 @@
+2025-04-18 19:36:29,536 - mcp_client - ERROR - Error calling tool get_mapping_details: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 192, in process_query
+    self.logger.info(f"Second response content: {second_response.choices[0].message.content}")
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 19:39:22,602 - mcp_client - ERROR - Error calling tool get_mapping_details: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 191, in process_query
+    self.logger.info(f"Second response content: {second_response.choices[0].message.content}")
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 19:40:26,229 - mcp_client - ERROR - Error calling tool get_mapping_details: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 193, in process_query
+    final_text.append(second_response.choices[0].message.content)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 19:45:48,234 - mcp_client - ERROR - Error generating completion: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 148, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 19:50:13,052 - mcp_client - ERROR - Error generating completion: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 148, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 19:51:27,155 - mcp_client - ERROR - Error generating completion: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 138, in process_query
+    response = await self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 1339, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1816, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1510, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1611, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+2025-04-18 19:52:31,693 - mcp_client - ERROR - Error generating completion: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 138, in process_query
+    response = await self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 1339, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1816, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1510, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1611, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+2025-04-18 19:53:27,085 - mcp_client - ERROR - Error generating completion: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 138, in process_query
+    response = await self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 1339, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1816, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1510, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1611, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+2025-04-18 19:55:19,966 - mcp_client - ERROR - Error generating completion: Error code: 404 - {'error': {'message': 'Usage of the experimental google/gemini-2.5-pro-exp-03-25 model has been limited to OpenRouter users who have purchased at least 10 credits ever. Please consider using the paid version at https://openrouter.ai/google/gemini-2.5-pro-preview-03-25 or adding your own API keys in https://openrouter.ai/settings/integrations', 'code': 404}}
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/mcp_client.py", line 138, in process_query
+    response = await self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 1339, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1816, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1510, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/anaconda3/lib/python3.11/site-packages/openai/_base_client.py", line 1611, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'Usage of the experimental google/gemini-2.5-pro-exp-03-25 model has been limited to OpenRouter users who have purchased at least 10 credits ever. Please consider using the paid version at https://openrouter.ai/google/gemini-2.5-pro-preview-03-25 or adding your own API keys in https://openrouter.ai/settings/integrations', 'code': 404}}
+2025-04-18 22:24:34,836 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 139, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 22:24:34,851 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 139, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 22:26:45,843 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 140, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 22:26:45,844 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 140, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 161, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 146, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 22:27:55,316 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 141, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 22:27:55,317 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 141, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 162, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 147, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 22:57:07,381 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 142, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 22:57:07,395 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 142, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 163, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 148, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 22:58:06,659 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 143, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 22:58:06,662 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 143, in process_query
+    if response.choices[0].message.content:
+       ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 164, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 149, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:01:51,743 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 98, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:01:51,744 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 98, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 164, in chat_loop
+    print("\n" + response)
+               ^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 149, in process_query
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:02:02,252 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 128, in process_query
+    "content": "Response from tool\n"+result.content
+               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "list") to str
+2025-04-18 23:02:02,253 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 128, in process_query
+    "content": "Response from tool\n"+result.content
+               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "list") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 162, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 147, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:13:01,545 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:13:01,549 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 162, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 147, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:30:43,605 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 145, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:30:43,607 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 145, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:31:07,057 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:31:07,058 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:31:16,715 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 145, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:31:16,717 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 145, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:33:15,576 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:33:15,579 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:33:47,990 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 145, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:33:47,994 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 145, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:36:06,231 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:36:06,232 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:38:34,475 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:38:34,480 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    except Exception as e:
+                   ^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    async def chat_loop(self):
+                             ^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-18 23:38:35,809 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 169, in chat_loop
+    break
+        ^^
+EOFError
+2025-04-18 23:44:07,582 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-18 23:44:07,585 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 173, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 158, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:34:50,698 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:34:50,708 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 173, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 158, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:35:03,344 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:35:03,344 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 173, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 158, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:35:34,124 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:35:34,126 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 144, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 173, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 158, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:36:02,305 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:36:02,307 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 99, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 174, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 159, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:36:45,709 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 100, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:36:45,715 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 100, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 175, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 160, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:38:11,633 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 146, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:38:11,634 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 146, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 175, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 160, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:42:58,127 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 146, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:42:58,130 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 146, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 175, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 160, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:43:51,496 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 100, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:43:51,497 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 100, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 175, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 160, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:44:03,717 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 146, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:44:03,719 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 146, in process_query
+    message = response.choices[0].message
+              ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 175, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 160, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 01:56:53,953 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 100, in process_query
+    tools=available_tools
+          ^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-19 01:56:53,953 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 100, in process_query
+    tools=available_tools
+          ^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 179, in chat_loop
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 164, in process_query
+    loop = 0
+         ^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
+2025-04-19 10:30:09,367 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 184, in chat_loop
+    try:
+         
+EOFError
+2025-04-19 10:30:09,970 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 184, in chat_loop
+    try:
+         
+EOFError
+2025-04-19 10:30:10,372 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 184, in chat_loop
+    try:
+         
+EOFError
+2025-04-19 10:30:10,735 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 184, in chat_loop
+    try:
+         
+EOFError
+2025-04-19 15:43:05,221 - root - ERROR - Error processing query
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 120, in process_query
+    for tool_call in message.tool_calls:
+TypeError: 'NoneType' object is not iterable
+2025-04-19 15:43:05,224 - root - ERROR - Unexpected error in chat loop
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 120, in process_query
+    for tool_call in message.tool_calls:
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 190, in chat_loop
+    response = await self.process_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vijay/mcp_learn/openai_mcp_client.py", line 175, in process_query
+    logger.exception(e.body)
+                     ^^^^^^
+AttributeError: 'TypeError' object has no attribute 'body'
