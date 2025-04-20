@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "my-mcp-server-0ba13718": {
+            "type": "stdio",
+            "command": "/home/vijay/anaconda3/bin/uv",
+            "args": [
+                "--directory",
+                "/home/vijay/mcp_learn/dataengineer",
+                "run",
+                "dataengineer.py"
+            ]
+        }
+    }
+}

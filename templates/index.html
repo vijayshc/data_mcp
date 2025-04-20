@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Monitor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MCP Monitor</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Server Control</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Status: <span id="server-status" class="badge bg-secondary">Unknown</span></span>
+                            <div class="btn-group">
+                                <button id="start-server" class="btn btn-success">Start Server</button>
+                                <button id="stop-server" class="btn btn-danger">Stop Server</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Client Control</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Status: <span id="client-status" class="badge bg-secondary">Unknown</span></span>
+                            <div class="btn-group">
+                                <button id="start-client" class="btn btn-success">Start Client</button>
+                                <button id="stop-client" class="btn btn-danger">Stop Client</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Send Message</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <textarea id="message-input" class="form-control" rows="3" placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button id="send-message" class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5>Logs</h5>
+                        <div class="btn-group">
+                            <button id="show-all-logs" class="btn btn-sm btn-outline-secondary active">All</button>
+                            <button id="show-server-logs" class="btn btn-sm btn-outline-secondary">Server</button>
+                            <button id="show-client-logs" class="btn btn-sm btn-outline-secondary">Client</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="logs-container" class="logs-container">
+                            <div id="log-entries">
+                                <!-- Log entries will be dynamically inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
